@@ -1,0 +1,23 @@
+.main-box {
+  @apply w-[450px] p-4 text-center max-md:w-[350px] max-md:p-2;
+}
+
+.sonDakka::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  @apply text-3xl;
+}
+
+.list-item {
+  @apply flex my-5 gap-4 bg-white p-4 rounded max-md:my-4 max-md:gap-2 max-md:p-2 shadow-2xl;
+}
+
+.image {
+  @apply w-40 max-w-full h-auto object-cover;
+}
+
+.content {
+  @apply flex flex-col gap-4 justify-between md:text-base text-sm;
+}

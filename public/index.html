@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Açıklama"
+      content="Alem Sanal Haber Gerçek"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/Logo.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts End-->
+
+    <title>Alem sanal haber gerçek</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://paracevirici.com/servis/widget/widget.js"
+    ></script>
+
+    <script
+      async
+      src="https://app2.weatherwidget.org/js/?id=ww_518f30dcacacc"
+    ></script>
+
+    <script type="text/javascript">
+      $(function () {
+        typeof $.fn.paraceviriciWidget == "function" &&
+          $("#W1942").paraceviriciWidget({
+            widget: "slideline",
+            wData: {
+              category: 0,
+              currency: "USD-EUR-GBP-CHF-NOK-DKK-AUD-CAD",
+            },
+            wSize: {
+              wWidth: "100%",
+              wHeight: 80,
+            },
+            wColumn: {
+              cL: 1,
+            },
+            wContent: {
+              cFlag: 2,
+            },
+            wTop: {
+              tStat: 2,
+              tB: "#305891",
+              tC: "#ffffff",
+            },
+            wLeft: {
+              lStat: 0,
+            },
+            wCode: {
+              cS: 22,
+            },
+            wPrice: {
+              pS: 26,
+            },
+            wChange: {
+              cS: 15,
+            },
+            wArrow: {
+              aS: 11,
+            },
+          });
+      });
+    </script>
+  </body>
+</html>
