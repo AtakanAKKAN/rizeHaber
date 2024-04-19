@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -54,4 +58,48 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
+}
+
+/* ######### INFO PAGE ######### */
+
+.info-main-box {
+  @apply w-full lg:px-8 px-4 my-10;
+}
+
+.info-box {
+  @apply flex justify-between bg-white/30 lg:p-8 p-4 rounded max-lg:flex-col gap-4;
+}
+
+.content-box {
+  @apply lg:w-5/12 w-full;
+}
+
+.content-h1 {
+  @apply lg:text-4xl text-2xl font-bold mt-2 text-center italic;
+}
+
+.content-text {
+  @apply lg:text-xl text-base my-2;
+}
+
+.content-img-box {
+  @apply max-lg:flex max-lg:justify-center max-lg:items-center;
+}
+
+.content-img {
+  @apply w-[640px] h-[480px] object-cover;
+}
+
+/* ######### SPECIAL NEW PAGE ######### */
+
+.special-content {
+  @apply lg:text-lg text-base leading-loose py-2 px-4;
+}
+
+.special-box {
+  @apply w-full p-4;
+}
+
+.special-header {
+  @apply lg:text-2xl text-lg font-bold;
 }

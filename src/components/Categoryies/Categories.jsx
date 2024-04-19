@@ -20,6 +20,9 @@ const Categories = () => {
     
     "
     >
+
+      
+
       <Gundem />
       <Cay />
       <Saglık />

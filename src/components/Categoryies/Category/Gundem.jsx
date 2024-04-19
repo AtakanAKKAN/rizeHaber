@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Gundem = () => {
   const [feedData, setFeedData] = useState([]);
@@ -38,6 +39,21 @@ const Gundem = () => {
     <div className="main-box " id="sonDakka">
       <h1 className="header">Son Dakika</h1>
       <ul className="h-[650px] overflow-auto sonDakka">
+        <li className="list-item">
+          <img
+            src={require("../../../images/specialNew.jpg")}
+            alt=""
+            className="image"
+          />
+          <div className="content">
+            <Link to="/ankara-rize-günleri">
+              Bostan: “Ankara’daki Rize Günlerini Çay Temalı Ağırlıklı
+              Yapacağız”
+            </Link>
+            <p>Tarih: 19.04.2024 13.02.26</p>
+          </div>
+        </li>
+
         {feedData.map((item, index) => (
           <li key={index} className="list-item">
             {item.image && (

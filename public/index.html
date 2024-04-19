@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/Logo.png" />
@@ -24,12 +24,26 @@
     <!-- Fonts End-->
 
     <title>Alem Sanal Haber Gerçek</title>
+    <script>
+      window.onload = function() {
+          var links = document.querySelectorAll('a[target="_self"]'); // Sadece a etiketlerini hedefle
+          for (var i = 0; i < links.length; i++) {
+              links[i].addEventListener('click', function(event) {
+                  event.preventDefault(); // Varsayılan davranışı engelle
+                  var targetId = this.getAttribute('href').substring(1); // # ile başlayan hedef id'yi al
+                  var targetElement = document.getElementById(targetId); // Hedef elementi bul
+                  if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: 'smooth' }); // Hedef elemente kaydır
+                  }
+              });
+          }
+      };
+  </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script
@@ -37,10 +51,6 @@
       src="https://paracevirici.com/servis/widget/widget.js"
     ></script>
 
-    <script
-      defer
-      src="https://app2.weatherwidget.org/js/?id=ww_518f30dcacacc_u"
-    ></script>
 
     <script type="text/javascript">
       $(function () {

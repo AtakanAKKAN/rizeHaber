@@ -13,7 +13,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black/50 p-4 cursor-default pb-6">
+    <div className="w-full bg-black/50 p-4 cursor-default pb-6" id="footer">
       <div className=" flex flex-col gap-4 mb-5">
         <SubHeader />
         <WeatherWidget />
