@@ -1,6 +1,7 @@
 import React from "react";
 import TopBar from "../components/TopBar/TopBar";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const SpecialNew = () => {
   return (
@@ -16,7 +17,7 @@ const SpecialNew = () => {
             <div id="special-img-box" className="w-full">
               <img
                 src={require("../images/specialNew.jpg")}
-                className="w-full h-[600px] object-cover"
+                className="w-full max-h-[600px] object-cover h-auto "
                 alt=""
               />
             </div>
@@ -108,6 +109,8 @@ const SpecialNew = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

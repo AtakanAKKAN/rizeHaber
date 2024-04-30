@@ -19,9 +19,10 @@ const Footer = () => {
         <WeatherWidget />
       </div>
 
-      <div className="w-full flex items-center px-8 justify-between max-md:flex-col max-md:gap-10 ">
+      <div className="w-full flex items-center lg:px-8 px-4 justify-between max-md:flex-col max-md:gap-10 ">
         <div className="text-4xl text-white">
-          Alem Sanal <br /> Haber Gerçek
+          <span className="lg:block hidden">Alem Sanal <br /> Haber Gerçek</span>
+          <span className="lg:hidden block">Alem Sanal Haber Gerçek</span>
         </div>
 
         <div className="flex flex-col justify-between gap-4 text-white  ">

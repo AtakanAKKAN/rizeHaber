@@ -54,6 +54,21 @@ const Gundem = () => {
           </div>
         </li>
 
+        <li className="list-item">
+          <img
+            src={require("../../../images/600622.jpg")}
+            alt=""
+            className="image"
+          />
+
+          <div className="content">
+            <Link to="/bakan-yusuf-tekin-müdürlük">
+              AYŞE Tekin EKYS sınavını kazanarak Müdür Olmuş!
+            </Link>
+            <p>Tarih: 30.04.2024 08.35.11</p>
+          </div>
+        </li>
+
         {feedData.map((item, index) => (
           <li key={index} className="list-item">
             {item.image && (

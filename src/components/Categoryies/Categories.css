@@ -15,7 +15,7 @@
 }
 
 .image {
-  @apply w-40 max-w-full h-auto object-cover;
+  @apply w-40 max-w-full h-full object-cover;
 }
 
 .content {
